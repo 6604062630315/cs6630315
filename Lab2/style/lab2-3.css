@@ -1,0 +1,6 @@
+.tab, td {
+    border: 1px solid black;
+}
+.highlight:hover {
+    background-color: blueviolet;
+}
