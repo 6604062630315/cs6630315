@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>cs6630315's Labs</title>
+        <style>
+            body {
+                background-color: rgb(156, 134, 255);
+            }
+            nav {
+                background-color: #333; /* สีพื้นหลังของ Navbar */
+                overflow: hidden; /* ป้องกันไม่ให้ content ล้นออกมา */
+            }
+
+            nav ul {
+                list-style-type: none; /* เอา bullet ออกจาก list */
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .navHead {
+                float: left; /* จัดเรียง item ใน Navbar ให้อยู่ในบรรทัดเดียวกัน */
+            }
+
+            nav li a {
+                display: block; /* ทำให้ link ครอบคลุมพื้นที่ทั้งหมดของ <li> */
+                color: white; /* สีตัวอักษร */
+                text-align: center; /* จัดตัวอักษรให้อยู่ตรงกลาง */
+                padding: 14px 16px; /* กำหนด padding */
+                text-decoration: none; /* เอาเส้นใต้ link ออก */
+            }
+
+            nav li a:hover {
+                background-color: #ddd; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+                color: black; /* เปลี่ยนสีตัวอักษรเมื่อ hover */
+            }
+
+            /* Dropdown Styling */
+            nav li ul {
+                display: none; /* ซ่อน dropdown menu ตอนเริ่มต้น */
+                position: absolute; /* กำหนดตำแหน่งแบบ absolute */
+                background-color: #f9f9f9; /* สีพื้นหลังของ dropdown */
+                min-width: 160px; /* กำหนดความกว้างขั้นต่ำ */
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* ใส่เงา */
+                z-index: 1; /* กำหนด z-index */
+            }
+
+            nav li:hover > ul {
+                display: block; /* แสดง dropdown menu เมื่อ hover */
+            }
+
+            nav li ul li a {
+                color: black; /* สีตัวอักษรใน dropdown */
+                padding: 12px 16px; /* กำหนด padding */
+                text-decoration: none; /* เอาเส้นใต้ link ออก */
+                display: block; /* ทำให้ link ครอบคลุมพื้นที่ทั้งหมด */
+                text-align: left; /* จัดตัวอักษรชิดซ้าย */
+            }
+
+            nav li ul li a:hover {
+                background-color: #ddd; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="navHead"><a href="index.html">Home</a></li>
+                <li class="navHead">
+                    <a>Lab1</a>
+                    <ul>
+                        <li><a href="Lab1/Lab1no1.html">Lab1no1</a></li>
+                        <li><a href="Lab1/Lab1no2.html">Lab1no2</a></li>
+                        <li><a href="Lab1/Lab1no3.html">Lab1no3</a></li>
+                        <li><a href="Lab1/Lab1no4.html">Lab1no4</a></li>
+                        <li><a href="Lab1/lab1no5/web1/workshop1/index2.html">Lab1no5A - index2</a></li>
+                        <li><a href="Lab1/lab1no5/web1/workshop2/classMonday/homework/exercise1.html">Lab1no5A - exercise1</a></li>
+                        <li><a href="Lab1/lab1no5/web2/index.html">Lab1no5B</a></li>
+                    </ul>
+                </li>
+                <li class="navHead">
+                    <a>Lab2</a>
+                    <ul>
+                        <li><a href="Lab2/lab2-1.html">Lab2no1</a></li>
+                        <li><a href="Lab2/lab2-2.html">Lab2no2</a></li>
+                        <li><a href="Lab2/lab2-3.html">Lab2no3</a></li>
+                    </ul>
+                </li>
+                <li class="navHead"><a>Lab3</a></li>
+                <li class="navHead"><a>Lab4</a></li>
+            </ul>
+        </nav>
+
+    </body>
+</html>
